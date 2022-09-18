@@ -1,0 +1,88 @@
+@import url('https://fonts.googleapis.com/css2?family=Silkscreen&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+
+body {
+    background-image: radial-gradient(circle farthest-corner at 10% 20%, rgba(255, 209, 67, 1) 0%, rgba(255, 145, 83, 1) 90%);
+    height: 100vh;
+    font-family: 'Silkscreen', cursive;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    .game-card {
+
+        background-color: #f6f6f6;
+        height: 80vh;
+        width: 60vw;
+        margin: auto auto;
+
+        border-radius: 10px;
+        box-shadow: 2px 2px 7px 4px #838383ab;
+
+        .players {
+
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+
+            height: 65%;
+
+            .player-box {
+
+                .hand {
+                    margin-top: 3em;
+                    width: 250px;
+                    transform: scaleX(-1);
+                }
+            }
+
+            .computer-box {
+
+                .hand {
+                    margin-top: 3em;
+                    width: 250px;
+                }
+            }
+        }
+
+        h1{
+            text-align: center;
+            font-size: 30px;
+        }
+
+        h3{
+            text-align: center;
+            margin: 30px;
+        }
+
+        .options{
+            display: flex;
+            justify-content: space-around;
+
+            button{
+                position: relative;
+                width: 150px;
+                height: 75px;
+                border: 3px solid black;
+                background-color: rgb(255, 208, 0);
+                overflow: hidden;
+                font-size: 18px;
+                font-family: 'Silkscreen', cursive;
+                z-index: 12;
+                cursor: pointer;
+                
+                transition: 0.2s;
+
+                &:hover{
+                    background-color: rgb(240, 184, 0);
+                }
+            }
+        }
+    }
+}
